@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Snickers",
+    "count": 8,
+    "price": 2.8,
+    "imagePath": "./snickers.jpg"
+  },
+  {
+    "name": "Mars",
+    "count": 15,
+    "price": 2.6,
+    "imagePath": "./mars.webp"
+  },
+  {
+    "name": "Bounty",
+    "count": 9,
+    "price": 1.9,
+    "imagePath": "./bounty.jpg"
+  },
+  {
+    "name": "Borovets waffle",
+    "count": 15,
+    "price": 1.6,
+    "imagePath": "./borovets.png"
+  },
+  {
+    "name": "Borovets waffle",
+    "count": 9,
+    "price": 1.6,
+    "imagePath": "./borovets.png"
+  },
+  {
+    "name": "Bankya Mineral Water",
+    "count": 12,
+    "price": 1.2,
+    "imagePath": "./bankya.webp"
+  },
+  {
+    "name": "Bankya Mineral Water",
+    "count": 5,
+    "price": 1.2,
+    "imagePath": "./bankya.webp"
+  },
+  {
+    "name": "BBB Jiuce",
+    "count": 11,
+    "price": 0.8,
+    "imagePath": "./BBB.jpeg"
+  },
+  {
+    "name": "Coca Cola",
+    "count": 4,
+    "price": 2.0,
+    "imagePath": "./coke.png"
+  },
+  {
+    "name": "Pepsi",
+    "count": 14,
+    "price": 2.2,
+    "imagePath": "./pepsi.png"
+  }
+]
