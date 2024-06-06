@@ -1,5 +1,5 @@
 import React from "react";
-import { useDenominations } from "../utils/useDenominations";
+import { useDenominations } from "../../utils/useDenominations";
 
 const ProductCard = ({ product, index, onProductSelect }) => {
   const { name, count, price, imagePath } = product;

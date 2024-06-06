@@ -1,6 +1,6 @@
 import React from "react";
 import Coin from "./Coin";
-import { useDenominations } from "../../utils/useDenominations";
+import { useDenominations } from "../../../utils/useDenominations";
 
 const MoneyWidget = ({ balance, handleAddCoin, setReset }) => {
   const {coins, formatCoin, formatBalance} = useDenominations();
