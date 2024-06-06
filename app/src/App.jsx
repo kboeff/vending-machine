@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./index.css";
 import Machine from "./Machine";
-import MoneyWidget from "./MoneyWidget/MoneyWidget";
-import Modal from "./Modal";
-import Purchase from "./Purchase";
+import MoneyWidget from "./components/MoneyWidget/MoneyWidget";
+import Modal from "./components/Modal";
+import Purchase from "./components/Purchase";
 
 const updateProductList = (list, product, index) => {
   const updated = [...list];
@@ -26,7 +26,11 @@ export default () => {
     if (balance >= product.price && products[index]) {
       setSelectedProduct(product)
       setChange(balance - product.price)
-      const updatedProducts = updateProductList(products, { ...currentProduct, count: currentProduct.count - 1 }, index)
+      const updatedProducts = updateProductList(
+        products, 
+        { ...currentProduct, count: currentProduct.count - 1 },
+        index
+      )
       setProducts(updatedProducts)
     }
   }
@@ -67,7 +71,11 @@ export default () => {
       </h1>
       <MoneyWidget balance={balance} handleAddCoin={setBalanace} setReset={setReset} />  
     </nav>
-    {noProductsFound ? (<div>No products found (API error).</div>) : (<Machine products={products} onProductSelect={handleProductSelect} />)}
+    {noProductsFound ? (
+      <div>No products found (API error).</div>
+    ) : (
+    <Machine products={products} onProductSelect={handleProductSelect} />
+    )}
     <Modal open={openModal} onClose={handleCloseModal}>
       <Purchase selectedProduct={selectedProduct} change={change} reset={reset} />
     </Modal>

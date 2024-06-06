@@ -1,5 +1,5 @@
 import React from "react";
-import { useDenominations } from "../utils/useDenominations";
+import { useDenominations } from "../../utils/useDenominations";
 import Coin from "./MoneyWidget/Coin";
 
 const Purchase = ({ selectedProduct, change, reset }) => {
