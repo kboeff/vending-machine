@@ -1,11 +1,4 @@
-const COIN_VALUES = [0.1, 0.2, 0.5, 1, 2];
-const CURRENCY = {
-  separator: 1,
-  lowerDenominationsText: "ст.",
-  higherDenominationText: "лв.",
-  symbolPosition: "right",
-  multiplier: 100,
-};
+import { COIN_VALUES, CURRENCY } from "../config/currency";
 
 export const useDenominations = () => {
   const formatCoin = (value) => {
